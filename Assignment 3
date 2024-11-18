@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dessert Menu</title>
+
+        <style>
+           h1 {
+            margin-bottom: 1%;
+            margin-top: auto;
+            text-decoration: underline rgb(176, 220, 56) 3px;
+            text-underline-position: auto;
+            text-underline-offset: 4px;
+            
+        }
+
+           #subText {
+             color: deeppink;
+             font-family: fantasy;
+             font-size: medium;
+             margin-top: auto;
+             
+        }
+
+          #result {
+            color: blueviolet;
+
+          }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Dessert Menu</h1>
+
+        <p id="subText">We bake fresh daily!</p>
+        
+        <p> 
+            <strong>We proudly offer:</strong>
+            <ul>
+                <li>Donuts</li>
+                <li>Cupcakes</li>
+                <li>Cookies</li>
+            </ul>
+        </p>
+    
+        <p>
+            <label for="dietarySelection">Dietary Selection</label>
+            <select id="dietarySelection">
+                <option>Gluten Free</option>
+                <option>Vegan</option>
+                <option>Sugar Free</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="commentBox">Comments:</label>
+            <input type="text" id="commentBox" value="Hey there!">
+        </p>
+
+        <p>
+            <input type="button" value="Click Me!" id="displayMessage" onclick="process()">
+            
+        </p>
+
+        <p id="result"> Thank you! </p>
+
+        <!-- Not really sure where I'm supposed to put this or if this is how you meant for us to do it, but my name is Alexandria Kaspar -->
+
+        <!--As for my App description... it's a Dessert Menu page. It has a green underlined title & 3 bullet points with offerred items.
+            It has a drop-down for dietary preferences of the desserts and a comment box that changes content with the button click.
+            The sub-title also changes with the button click and has a deep pink fantasy font. 
+            The purple message displayed below the button changes to include the user's drop-down selection upon click.-->
+
+    </body>
+
+    <script>
+
+        function process() {
+            let comments = document.querySelector('#commentBox').value = 'I like jelly';
+            let diet = document.querySelector('#dietarySelection').value;
+            document.querySelector('#result').innerHTML = 'Your dessert will be ' + diet;
+            document.querySelector('#subText').innerHTML = 'Come on in!';
+            
+        }
+        
+    </script>
+</html>

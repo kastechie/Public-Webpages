@@ -1,0 +1,20 @@
+
+<p><label for="course_input">Courses </label><input type="text" id="course_input"></p>
+
+<p id="results">Show Results</p>
+
+<p><input type="button" value ="Click!" id="showButton"></p>
+
+<script>
+  
+  const btn = document.getElementById('showButton');
+	btn.addEventListener("click", change);
+  
+  function change() {
+
+    let result_area = document.querySelector('#results');
+    let course_input = document.querySelector("#course_input").value;
+    result_area.innerHTML = result_area.innerHTML + "<br>" + course_input;
+  }
+
+</script>

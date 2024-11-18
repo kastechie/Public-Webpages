@@ -1,0 +1,47 @@
+<!doctype html>
+
+<!-- Name: Ali Kaspar - Assignment 5 did not call for an HTML file summary outside of the
+ pdf or text summarizing accomplishments, so assuming one is not needed here. -->
+
+<html>
+
+<head>
+    <title>Chicago Employee Salary Info</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="ChicagoEmployees.js"></script>
+    <script src="ChiDemo.js"></script>
+</head>
+
+<body>
+  <h1>Salary Information for Chicago Employees</h1>
+
+  <p>Enter First or Last Name: <input type="text" id="key-word" size="20" /></p>
+  <div>
+  <input type="checkbox" id="sName" checked>Name</input>
+
+  <input type="checkbox" id="sTitle" checked>Title</input>
+
+  <input type="checkbox" id="sDept" checked>Department</input>
+
+  <input type="checkbox" id="sSalary" checked>Salary</input>
+  </div>
+
+  <p><input type="button" id="start" value="Submit Query" /></p>
+
+  <h2>First Matching Person with their Employment Information</h2>
+  <div id="result">
+    First result appears here
+  </div>
+
+  <h2>List of all matching names</h2>
+  <div id="names">
+    All matching names appear here
+  </div>
+
+
+</body>
+</html>
+
